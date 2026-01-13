@@ -1,0 +1,21 @@
+﻿# 模型和数据路径
+MODEL_PATH = "../Qwen2.5-7B-Instruct"
+DATA_PATH = "../data/ResumeDataSet.csv"
+OUTPUT_DIR = "../qwen-resume-classifier"
+FINAL_MODEL_DIR = "../qwen-resume-classifier-final"
+
+# 训练参数
+TRAIN_TEST_SPLIT = 0.2
+VALIDATION_SPLIT = 0.2
+PER_DEVICE_TRAIN_BATCH_SIZE = 1
+GRADIENT_ACCUMULATION_STEPS = 16
+LEARNING_RATE = 1e-4
+NUM_TRAIN_EPOCHS = 3
+LOGGING_STEPS = 10
+MAX_SEQ_LENGTH = 256
+
+# LoRA配置
+LORA_R = 8
+LORA_ALPHA = 32
+LORA_TARGET_MODULES = ["q_proj", "v_proj"]
+LORA_DROPOUT = 0.05
