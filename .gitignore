@@ -1,3 +1,4 @@
 .vs
 **/__pycache__
 Qwen2.5-7B-Instruct
+qwen-resume-classifier
